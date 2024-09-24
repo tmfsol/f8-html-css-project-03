@@ -21,3 +21,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+// Common
+.container {
+	width: abstracts.$container-width;
+	max-width: calc(100% - 48px);
+	margin: 0 auto;
+}
