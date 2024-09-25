@@ -3,6 +3,7 @@
 // Header
 .header {
 	min-height: 100vh;
+	padding-top: 30px;
 	background-color: abstracts.$header-bg-color;
 }
 
@@ -22,7 +23,7 @@
 		&::before {
 			width: 3em;
 			height: 3em;
-			background-color: #2e80ce;
+			background-color: abstracts.$primary-color;
 		}
 
 		&::after {
@@ -49,6 +50,69 @@
 			&--small {
 				font-weight: 300;
 				font-size: 1.2em;
+			}
+		}
+	}
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 2.8rem;
+
+	.header-top__action {
+		.btn-login {
+			color: #c9d2da;
+		}
+
+		.btn-signup {
+			margin-left: 28px;
+		}
+	}
+}
+
+// Navbar
+.navbar {
+	.navbar__list {
+		display: flex;
+		align-items: center;
+		gap: 0 30px;
+
+		.btn-login,
+		.navbar__item {
+			.navbar__link {
+				padding: 4px 6px;
+
+				color: #c9d2da;
+				font-weight: 300;
+
+				&:not(.navbar__link--active):hover {
+					opacity: 0.9;
+					text-shadow: 1px 0 0 currentColor;
+				}
+			}
+
+			.navbar__link--active {
+				color: #fff;
+				text-shadow: 1px 0 0 currentColor;
+				position: relative;
+
+				&::before {
+					$size: 6px;
+
+					content: '';
+					width: $size;
+					height: $size;
+					display: inline-block;
+
+					border-radius: 50%;
+					background-color: #fff;
+
+					top: calc(50% - $size / 2);
+					left: -2px;
+					position: absolute;
+				}
 			}
 		}
 	}

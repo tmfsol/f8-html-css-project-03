@@ -1,0 +1,26 @@
+@use './../abstracts';
+
+.btn {
+	min-width: 80px;
+	padding: 7px 20px;
+	display: inline-block;
+
+	font-size: 1.6rem;
+	font-weight: 400;
+	border-radius: 22px;
+	line-height: 2.8rem;
+
+	color: #fff;
+	background-color: abstracts.$primary-color;
+	border: 1px solid abstracts.$primary-color;
+
+	&:hover {
+		opacity: 0.9;
+		cursor: pointer;
+	}
+
+	.btn--large {
+		border-radius: 30px;
+		line-height: 3rem;
+	}
+}
