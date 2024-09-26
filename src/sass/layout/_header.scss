@@ -125,6 +125,7 @@
 .hero {
 	margin-top: 76px;
 	display: flex;
+	align-items: center;
 
 	.hero__content {
 		width: 44%;
@@ -176,7 +177,9 @@
 				&:first-child {
 					width: 330px;
 					height: 540px;
-					transform: translateX(6px);
+					margin-right: -6px;
+					position: relative;
+					// transform: translateX(6px);
 				}
 
 				&:last-child {
