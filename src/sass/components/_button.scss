@@ -22,9 +22,12 @@
 		opacity: 0.9;
 		cursor: pointer;
 	}
+}
 
-	.btn--large {
-		border-radius: 30px;
-		line-height: 3rem;
-	}
+.btn--large {
+	padding: 14px 45px;
+
+	border-radius: 30px;
+	font-size: 1.8rem;
+	line-height: 3rem;
 }

@@ -29,7 +29,7 @@
 		&::after {
 			width: 1.6em;
 			height: 1.6em;
-			background-color: #fff;
+			background-color: abstracts.$white-color;
 
 			top: 1.1em;
 			left: 1.1em;
@@ -45,7 +45,7 @@
 		.logo-brand {
 			display: block;
 			font-size: 1.8em;
-			color: #fff;
+			color: abstracts.$white-color;
 
 			&--small {
 				font-weight: 300;
@@ -63,6 +63,7 @@
 
 	.header-top__action {
 		display: inline-flex;
+		align-items: center;
 
 		.btn-login {
 			color: #c9d2da;
@@ -96,7 +97,7 @@
 			}
 
 			.navbar__link--active {
-				color: #fff;
+				color: abstracts.$white-color;
 				text-shadow: 1px 0 0 currentColor;
 				position: relative;
 
@@ -109,11 +110,78 @@
 					display: inline-block;
 
 					border-radius: 50%;
-					background-color: #fff;
+					background-color: abstracts.$white-color;
 
 					top: calc(50% - $size / 2);
 					left: -2px;
 					position: absolute;
+				}
+			}
+		}
+	}
+}
+
+// Hero
+.hero {
+	margin-top: 76px;
+	display: flex;
+
+	.hero__content {
+		width: 44%;
+		flex-shrink: 0;
+
+		.hero__heading {
+			font-size: 7rem;
+			font-weight: 600;
+			line-height: 8rem;
+			letter-spacing: -0.02em;
+			color: abstracts.$white-color;
+		}
+
+		.hero__desc {
+			font-size: 1.8rem;
+			font-weight: 300;
+			line-height: 3rem;
+			color: #c9d2da;
+		}
+
+		.hero__cta {
+			margin-top: 38px;
+			display: inline-flex;
+			align-items: center;
+
+			.hero__phone {
+				margin-left: 38px;
+
+				font-size: 1.8rem;
+				line-height: 3rem;
+				color: abstracts.$white-color;
+			}
+		}
+	}
+
+	.hero__media {
+		flex-grow: 1;
+
+		.hero__images {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			.hero__img {
+				border-radius: 6px;
+				object-fit: cover;
+				object-position: center;
+
+				&:first-child {
+					width: 330px;
+					height: 540px;
+					transform: translateX(6px);
+				}
+
+				&:last-child {
+					width: 210px;
+					height: 410px;
 				}
 			}
 		}
