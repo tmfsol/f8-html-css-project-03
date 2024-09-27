@@ -1,5 +1,6 @@
 @use './../abstracts';
 
+// Service
 .service {
 	margin-top: 170px;
 
@@ -86,5 +87,72 @@
 
 	.all-service-btn {
 		margin-top: 55px;
+	}
+}
+
+// Work
+.work {
+	margin-top: 170px;
+	padding-block: 100px;
+
+	background-color: #f6fbff;
+
+	.work__desc {
+		width: 478px;
+	}
+
+	.work__list {
+		margin-top: 86px;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+
+		.work-item {
+			$color: #eaf6ff;
+
+			border-radius: 4px;
+			border: 16px solid $color;
+			background-color: $color;
+			transition: 0.3s;
+
+			&:hover {
+				cursor: pointer;
+				transform: translateY(-16px);
+				border-color: abstracts.$secondary-color;
+				background-color: abstracts.$secondary-color;
+			}
+
+			.work-item__wrap {
+				padding: 42px;
+				border-radius: 4px;
+				background-color: abstracts.$white-color;
+
+				.work-item__heading {
+					margin-top: 18px;
+
+					font-size: 2.6rem;
+					font-weight: 600;
+					line-height: 1.38;
+					color: abstracts.$primary-color;
+				}
+
+				.work-item__desc {
+					margin-top: 28px;
+					font-weight: 300;
+					line-height: 1.75;
+					color: abstracts.$text-color;
+				}
+
+				.work-item__more {
+					margin-top: 18px;
+					display: inline-block;
+
+					font-weight: 300;
+					line-height: 1.75;
+					color: abstracts.$secondary-color;
+				}
+			}
+		}
 	}
 }
