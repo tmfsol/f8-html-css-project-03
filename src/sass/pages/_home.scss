@@ -1,0 +1,90 @@
+@use './../abstracts';
+
+.service {
+	margin-top: 170px;
+
+	.service__heading,
+	.service__desc {
+		text-align: center;
+	}
+
+	.service__desc {
+		width: 468px;
+		margin-inline: auto;
+	}
+
+	.service__row {
+		margin-top: 70px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.service__img {
+			width: 570px;
+			height: 570px;
+			object-fit: cover;
+		}
+	}
+
+	.service__list {
+		width: 470px;
+
+		.service-item {
+			padding: 22px;
+			display: flex;
+			border-radius: 10px;
+			transition: all 0.3s;
+			background-color: abstracts.$white-color;
+
+			&:hover {
+				cursor: pointer;
+				position: relative;
+				box-shadow: 0px 14px 28px 0px #0000000d;
+
+				.service-item__icon {
+					color: abstracts.$white-color;
+					background-color: abstracts.$secondary-color;
+					box-shadow: 0px 8px 16px 0px #289bde26;
+				}
+			}
+
+			.service-item__icon {
+				width: 60px;
+				height: 60px;
+
+				flex-shrink: 0;
+				justify-content: center;
+				align-items: center;
+				display: inline-flex;
+
+				border-radius: 50%;
+
+				color: abstracts.$primary-color;
+				background-color: #eff6fd;
+				box-shadow: 0px 8px 16px 0px #0000000d;
+			}
+
+			.service-item__body {
+				margin-left: 19px;
+
+				.service-item__heading {
+					font-size: 1.8rem;
+					font-weight: 600;
+					line-height: 1.26;
+					color: abstracts.$primary-color;
+				}
+
+				.service-item__desc {
+					font-weight: 300;
+					line-height: 1.75;
+					color: abstracts.$text-color;
+				}
+			}
+		}
+	}
+
+	.all-service-btn {
+		margin-top: 55px;
+	}
+}
