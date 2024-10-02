@@ -314,3 +314,91 @@
 		}
 	}
 }
+
+// Install
+.install {
+	margin-top: 95px;
+	padding-block: 85px;
+
+	.install__body {
+		padding: 76px 70px;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		border-radius: 4px;
+		background-color: abstracts.$secondary-color;
+		position: relative;
+
+		.install__img {
+			width: 284px;
+			height: 522px;
+			object-fit: cover;
+			display: block;
+
+			bottom: 0;
+			left: 70px;
+			position: absolute;
+		}
+
+		.install__content {
+			flex-shrink: 0;
+			max-width: 586px;
+
+			.install__heading {
+				font-size: 5rem;
+				font-weight: 600;
+				line-height: 1.2;
+				letter-spacing: -0.02em;
+				color: abstracts.$white-color;
+			}
+
+			.install__desc {
+				margin-top: 18px;
+
+				font-size: 1.8rem;
+				font-weight: 300;
+				line-height: 1.67;
+				color: abstracts.$white-color;
+			}
+
+			.install__row {
+				margin-top: 38px;
+				display: flex;
+				column-gap: 28px;
+
+				.install__btn {
+					padding: 4px 8px;
+
+					color: abstracts.$white-color;
+
+					display: inline-flex;
+					column-gap: 8px;
+					align-items: center;
+					border: 1px solid abstracts.$white-color;
+					border-radius: 6px;
+
+					&:hover {
+						cursor: pointer;
+					}
+
+					.install-btn__text {
+						text-align: left;
+						line-height: 0.975;
+
+						.install-btn__desc {
+							font-weight: 500;
+							font-size: 1.2rem;
+						}
+
+						.install-btn__name {
+							font-weight: 600;
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
