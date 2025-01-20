@@ -37,3 +37,31 @@ body {
 	line-height: 3rem;
 	color: abstracts.$text-color;
 }
+
+// Control
+.control {
+	display: flex;
+	column-gap: 18px;
+
+	.control__btn {
+		width: 36px;
+		height: 36px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+
+		outline: none;
+
+		background-color: abstracts.$white-color;
+		border: 1px solid abstracts.$text-color;
+		border-radius: 50%;
+		transition: 0.3s;
+
+		&:hover {
+			cursor: pointer;
+			color: abstracts.$white-color;
+			border-color: abstracts.$secondary-color;
+			background-color: abstracts.$secondary-color;
+		}
+	}
+}

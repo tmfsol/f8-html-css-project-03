@@ -11,7 +11,7 @@
 			}
 		],
 
-		// JS ES6 environment async-await synctax
+		// JS ES6 environment async-await syntax
 		[
 			"@babel/plugin-transform-runtime",
 			{
